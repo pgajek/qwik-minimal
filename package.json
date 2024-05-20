@@ -40,5 +40,12 @@
     "undici": "*",
     "vite": "^5.2.10",
     "vite-tsconfig-paths": "^4.2.1"
+  },
+  "dependencies": {
+    "@wagmi/connectors": "^5.0.2",
+    "@wagmi/core": "^2.10.2",
+    "@web3modal/wagmi": "^4.2.1",
+    "viem": "^2.11.0",
+    "wagmi": "^2.9.2"
   }
 }
