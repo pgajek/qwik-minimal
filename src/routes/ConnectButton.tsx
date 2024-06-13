@@ -29,7 +29,7 @@ const openWeb3Modal = async (config: NoSerialize<Config>) => {
   return modal;
 };
 
-export default component$((props) => {
+export default component$(() => {
   const wagmiConfig = useContext(WagmiConfigContext);
 
   const openModal = $(async () => {
