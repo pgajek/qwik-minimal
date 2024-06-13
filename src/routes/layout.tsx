@@ -44,10 +44,10 @@ export default component$(() => {
   const wagmiConfig = useContext(WagmiConfigContext);
 
   useVisibleTask$(() => {
-    console.log("[Config z contextu]: ", wagmiConfig.config);
+    console.log("[UsevisibleTask confit from context]: ", wagmiConfig.config);
 
     console.log(
-      "[config wywołany w logu]: ",
+      "[useVisibleTask config loaded in log]: ",
       noSerialize(
         defaultWagmiConfig({
           chains: [mainnet],
@@ -64,7 +64,10 @@ export default component$(() => {
 
     wagmiConfig.config = noSerialize(wconfig);
 
-    console.log("[config z contextu po przypisaniu]: ", wagmiConfig.config);
+    console.log(
+      "[UseVisibltTask config from context after defining]: ",
+      wagmiConfig.config
+    );
     if (wagmiConfig.config) {
       watchAccount(wagmiConfig.config!, {
         onChange(account) {
